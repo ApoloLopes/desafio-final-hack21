@@ -47,7 +47,7 @@ public class CardController {
 
     @GetMapping("/paginationAndSorting")
     public Page<Card> findAll(Pageable pageable) {
-        return cardService.findAll(pageable);
+        return cardService.findAll(pageable); // http://localhost:8080/cards/paginationAndSorting?size=5&page=0
     }
 
     @GetMapping
